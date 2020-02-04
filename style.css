@@ -247,4 +247,12 @@
 				color: white !important;
 				font-size: 16px !important;
 			}
+			.lp-window-root .lp_main .lp_main_area .lp_location_center {
+				z-index: 2;
+				overflow-y: hidden !important;
+				overflow-x: hidden;
+				height: calc(100% - 60px);
+				padding: 0 0 0 0;
+				transition: bottom .25s;
+		}
 		
