@@ -11,6 +11,20 @@
     <title>Front Desk Bot</title>
 </head>
 <body>
-
+    <script>
+        (function() {
+            function checkIfClosed() {
+                let el = document.querySelector('.lp_chat_line_auto_message');
+                if (el && el.title.includes('Conversation closed')) {
+                    clearInterval();
+                    location.reload();
+                }
+            }
+            
+            setInterval(function() {
+                checkIfClosed()
+            }, 5000)
+        })();
+    </script>
 </body>
 </html>
