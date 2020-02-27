@@ -124,7 +124,7 @@
 
 			.lpc_message__text_agent {
 				float: left !important;				
-				background: rgba(255, 255, 255, 0.95) !important;								
+				background: rgba(255, 255, 255, 0.95) !important;	padding: 20px !important;							
 				font-size: 16px !important;
 				line-height: normal !important;
 				color: #3b4146 !important;				
@@ -138,6 +138,10 @@
 
 			.lpc_desktop .lpc_message__text_agent {				
 				padding: 20px 20px !important;									
+			}
+
+			.lpc_message__text {
+				padding: 20px !important;
 			}
 			
 			.lpc_message__text_visitor {
@@ -183,8 +187,8 @@
 			
 			.chips-row button {
 				padding: 0 20px !important;
-				height: 36px !important;
-				font-size: 16px !important;
+				height: 50px !important;
+				font-size: 30px !important;
 				color: #fff !important;
 				background-color: #6a8adc !important;
 				border: none !important;
@@ -266,9 +270,9 @@
 			padding: 10px !important
 		}
 
-		.lp_message__text {
+		.lpc_message__text {
 			font-size: 30px !important;
-			padding: 10px !important
+			padding: 30px !important
 		}
 		
 		.lp_chat_line_wrapper {
@@ -277,6 +281,7 @@
 
 		.chips-row {
 			padding-left: 20px !important;
+			height: 50px !important;
 			/* margin: 0px !important; */
 		}
 
