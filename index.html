@@ -11,17 +11,31 @@
     <title>Front Desk Bot</title>
 </head>
 <body>
-    <script>
+    <script defer>
         (function() {
             function checkIfClosed() {
                 let el = document.querySelector('.lp_chat_line_auto_message');
                 if (el && el.title.includes('Conversation closed')) {
-                    clearInterval();
+                    clearInterval(closeConvInterval);
                     location.reload();
                 }
             }
+
+            function hideEngagement() {
+                let engagement = document.querySelector('.LPMcontainer');
+                if (engagement) {
+                    clearInterval(hideButtonInterval);
+                    engagement.addEventListener('click', () => {
+                        engagement.classList.add('hidden')
+                    })
+                }
+            }
+
+            const hideButtonInterval = setInterval(function() {
+                hideEngagement()
+            }, 1000)
             
-            setInterval(function() {
+            const closeConvInterval = setInterval(function() {
                 checkIfClosed()
             }, 5000)
         })();
