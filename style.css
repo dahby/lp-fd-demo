@@ -1,7 +1,7 @@
 /* https://developers.liveperson.com/assets/css-playground */
 			
 			html {
-				/* background: linear-gradient(       rgba(8,8,41, 0.5),        rgba(8, 8, 41, 0.5)     ), url('./lpbackground.png') no-repeat center center/cover !important; */
+				background: linear-gradient(       rgba(8,8,41, 0.5),        rgba(8, 8, 41, 0.5)     ), url('./lpbackground.png') no-repeat center center/cover !important;
 				height: 100%;
 			}
 			body {
@@ -93,7 +93,7 @@
 				border: none !important;
 				box-shadow: none !important;
 				/* background: url('./lpbackground.png') no-repeat center center/cover !important; */
-				/* background: linear-gradient(       rgba(8,8,41, 0.5),        rgba(8, 8, 41, 0.5)     ), url('./lpbackground.png') no-repeat center center/cover !important; */
+				background: linear-gradient(       rgba(8,8,41, 0.5),        rgba(8, 8, 41, 0.5)     ), url('./lpbackground.png') no-repeat center center/cover !important;
 				/* background-color: rgba(8, 8, 41, 0.5) !important; */
 				   /* background-blend-mode: color; */
 				   z-index: 9 !important;
